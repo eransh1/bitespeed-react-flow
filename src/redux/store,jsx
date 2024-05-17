@@ -1,0 +1,8 @@
+import { configureStore } from "@reduxjs/toolkit";
+import optionCountSliceReducer from "./optionCountSLice"
+
+export const store = configureStore({
+    reducer: {
+    optionCount: optionCountSliceReducer
+    },
+  });
